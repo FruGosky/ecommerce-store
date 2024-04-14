@@ -1,6 +1,8 @@
 import { Nav, NavLink } from '@/components/Nav';
 import { ReactNode } from 'react';
 
+export const dynamic = 'force-dynamic';
+
 type TAdminLayoutProps = {
 	children: ReactNode;
 };
