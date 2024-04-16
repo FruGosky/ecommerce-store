@@ -1,6 +1,6 @@
-type TOrdersPageProps = {};
+type TAdminOrdersPageProps = {};
 
-export default function OrdersPage(props: TOrdersPageProps) {
+export default function AdminOrdersPage(props: TAdminOrdersPageProps) {
 	return (
 		<>
 			<h1>Sales</h1>

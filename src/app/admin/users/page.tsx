@@ -1,6 +1,6 @@
-type TUsersPageProps = {};
+type TAdminUsersPageProps = {};
 
-export default function UsersPage(props: TUsersPageProps) {
+export default function AdminUsersPage(props: TAdminUsersPageProps) {
 	return (
 		<>
 			<h1>Customers</h1>
