@@ -35,10 +35,10 @@ model User {
 }
 
 model Order {
-    id           String   @id @default(uuid())
-    priceInCents Int
-    createdAt    DateTime @default(now())
-    updatedAt    DateTime @updatedAt
+    id               String   @id @default(uuid())
+    pricePaidInCents Int
+    createdAt        DateTime @default(now())
+    updatedAt        DateTime @updatedAt
 
     userId    String
     productId String
