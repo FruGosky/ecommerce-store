@@ -15,7 +15,7 @@ import {
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { MoreVertical } from 'lucide-react';
-import DeleteDropdownItem from './_components/UserActions';
+import { DeleteDropdownItem } from './_components/UserActions';
 
 const getUsers = () => {
 	return db.user.findMany({
