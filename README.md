@@ -20,6 +20,14 @@ How to run stripe in development?:
 
 ```bash
 stripe listen --forward-to localhost:3000/webhooks/stripe
+# or
+npm run stripe-dev
+# or
+yarn stripe-dev
+# or
+pnpm stripe-dev
+# or
+bun stripe-dev
 ```
 
 ## Learn More
