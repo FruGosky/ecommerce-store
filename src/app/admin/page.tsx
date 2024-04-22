@@ -11,12 +11,12 @@ import { ReactNode } from 'react';
 
 const getSalesData = async () => {
 	const data = await db.order.aggregate({
-		_sum: { priceInCents: true },
+		_sum: { pricePaidInCents: true },
 		_count: true,
 	});
 
 	return {
-		amount: (data._sum.priceInCents || 0) / 100,
+		amount: (data._sum.pricePaidInCents || 0) / 100,
 		numberOfSales: data._count,
 	};
 };
@@ -25,7 +25,7 @@ const getUserData = async () => {
 	const [userCount, orderData] = await Promise.all([
 		await db.user.count(),
 		await db.order.aggregate({
-			_sum: { priceInCents: true },
+			_sum: { pricePaidInCents: true },
 		}),
 	]);
 
@@ -34,7 +34,7 @@ const getUserData = async () => {
 		averageValuePerUser:
 			userCount === 0
 				? 0
-				: (orderData._sum.priceInCents || 0) / userCount / 100,
+				: (orderData._sum.pricePaidInCents || 0) / userCount / 100,
 	};
 };
 
