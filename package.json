@@ -7,7 +7,8 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"stripe-dev": "stripe listen --forward-to localhost:3000/webhooks/stripe"
+		"stripe-dev": "stripe listen --forward-to localhost:3000/webhooks/stripe",
+		"email": "copy .env.local .\\node_modules\\react-email && email dev --dir src/email --port 3001"
 	},
 	"dependencies": {
 		"@prisma/client": "^5.12.1",

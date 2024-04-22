@@ -30,6 +30,18 @@ pnpm stripe-dev
 bun stripe-dev
 ```
 
+## How to run react-email in development?:
+
+```bash
+npm run email
+# or
+yarn email
+# or
+pnpm email
+# or
+bun email
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
